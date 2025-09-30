@@ -40,11 +40,17 @@
       color: white;
     }
     #secret-section {
-      display: none;
+      opacity: 0;
+      visibility: hidden;
       margin-top: 20px;
       font-size: 1.5rem;
       font-weight: bold;
       color: #ffcc00;
+      transition: opacity 1.5s ease-in-out, visibility 1.5s;
+    }
+    #secret-section.show {
+      opacity: 1;
+      visibility: visible;
     }
     input[type="password"] {
       padding: 8px;
