@@ -1,4 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
   const message = document.getElementById("message");
-  message.textContent = "🚧 To be announced soon. 🚧";
+  const datetime = document.getElementById("datetime");
+  const xLink = document.getElementById("x-link");
+
+  // Main message
+  message.textContent = "🚧 To be announced soon 🚧";
+
+  // Date & time (you can edit this string)
+  const eventDate = "October 31, 2025 at 6:00 PM EST";
+  datetime.textContent = `📅 Event Date: ${eventDate}`;
+
+  // Link to your X account (replace with your username)
+  const xUsername = "OpenAI"; // Example account
+  xLink.href = `https://x.com/${xUsername}`;
 });
