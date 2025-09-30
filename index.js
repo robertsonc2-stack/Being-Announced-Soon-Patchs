@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      datetime.textContent = `📅 It Will be Announced in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+      datetime.textContent = `📅 It will be Announced in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
     }
   }, 1000);
 
