@@ -2,22 +2,19 @@ document.addEventListener("DOMContentLoaded", () => {
   const message = document.getElementById("message");
   const datetime = document.getElementById("datetime");
   const xLink = document.getElementById("x-link");
-  const viewCounter = document.getElementById("view-counter");
 
-  // Main message
   message.textContent = "🚧 To be announced soon. 🚧";
 
-  // Countdown target (EDIT THIS DATE/TIME)
-  const eventDate = new Date("October 18, 2025 18:00:00 EST").getTime();
+  // Set your event date & time here
+  const target = new Date("October 18, 2025 18:00:00").getTime();
 
-  // Update countdown every second
   const timer = setInterval(() => {
     const now = new Date().getTime();
-    const distance = eventDate - now;
+    const distance = target - now;
 
     if (distance <= 0) {
       clearInterval(timer);
-      datetime.textContent = "🎉 Event Started!";
+      datetime.textContent = "🎉 Be Ready.";
     } else {
       const days = Math.floor(distance / (1000 * 60 * 60 * 24));
       const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -28,28 +25,17 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }, 1000);
 
-  // Link to X account (replace with your username)
-  const xUsername = "OpenAI";
+  // X link (replace with your username)
+  const xUsername = "SD_COLTON";
   xLink.href = `https://x.com/${xUsername}`;
-
-  // View counter (local per browser)
-  let views = localStorage.getItem("pageViews");
-  if (!views) {
-    views = 1;
-  } else {
-    views = parseInt(views) + 1;
-  }
-  localStorage.setItem("pageViews", views);
-  viewCounter.textContent = `👀 Page views (on your browser): ${views}`;
 });
 
-// Password check
+// Password check for secret
 function checkPassword() {
   const input = document.getElementById("password").value;
   const secretSection = document.getElementById("secret-section");
 
-  // Change this password
-  const correctPassword = "MDPROJECT";
+  const correctPassword = "MDPROJECT"; // change this
 
   if (input === correctPassword) {
     secretSection.style.display = "block";
