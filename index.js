@@ -15,17 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const xUsername = "SD_COLTON";
   xLink.href = `https://x.com/${xUsername}`;
 
-  // View counter (local to each browser)
-  let views = localStorage.getItem("pageViews");
-  if (!views) {
-    views = 1;
-  } else {
-    views = parseInt(views) + 1;
-  }
-  localStorage.setItem("pageViews", views);
-  viewCounter.textContent = `👀 Page views (on your browser): ${views}`;
-});
-
 // Password check
 function checkPassword() {
   const input = document.getElementById("password").value;
