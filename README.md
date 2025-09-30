@@ -2,4 +2,8 @@
 
 Be Ready.
 
+Look for Hints, Secrets, and Clues.
+
 "MDPROJECT"
+
+
