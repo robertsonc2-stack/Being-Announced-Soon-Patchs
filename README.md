@@ -4,7 +4,7 @@ Be Ready.
 
 Look for Hints, Secrets, and Clues.
 
-"MDPROJECT"
+"MDPROJECT" (Might be a Clue)
 
 Website: https://coltonsr77.github.io/Being-Announced-Soon/
 
