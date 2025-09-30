@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const datetime = document.getElementById("datetime");
   const xLink = document.getElementById("x-link");
 
-  message.textContent = "🚧 To be announced soon. 🚧";
+  message.textContent = "🚧 To be announced soon 🚧";
 
   // Set your event date & time here
   const target = new Date("October 31, 2025 18:00:00").getTime();
@@ -38,7 +38,7 @@ function checkPassword() {
   const correctPassword = "MDPROJECT"; // change this
 
   if (input === correctPassword) {
-    secretSection.style.display = "block";
+    secretSection.classList.add("show");
   } else {
     alert("❌ Wrong password. Try again!");
   }
