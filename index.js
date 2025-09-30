@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   message.textContent = "🚧 To be announced soon. 🚧";
 
   // Set your event date & time here
-  const target = new Date("October 31, 2025 18:00:00").getTime();
+  const target = new Date("October 4, 2025 18:00:00").getTime();
 
   const timer = setInterval(() => {
     const now = new Date().getTime();
@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-      datetime.textContent = `📅 Event starts in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
+      datetime.textContent = `📅 Annoucement starts in: ${days}d ${hours}h ${minutes}m ${seconds}s`;
     }
   }, 1000);
 
