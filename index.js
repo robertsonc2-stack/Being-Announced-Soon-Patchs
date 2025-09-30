@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const xLink = document.getElementById("x-link");
 
   // Main message
-  message.textContent = "🚧 To be announced soon 🚧";
+  message.textContent = "🚧 To be announced soon. 🚧";
 
   // Date & time (you can edit this string)
   const eventDate = "October 18, 2025 at 6:00 PM EST";
