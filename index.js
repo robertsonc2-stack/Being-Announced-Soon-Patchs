@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
   message.textContent = "🚧 To be announced soon 🚧";
 
   // Date & time (editable)
-  const eventDate = "October 31, 2025 at 6:00 PM EST";
+  const eventDate = "October 18, 2025 at 6:00 PM EST";
   datetime.textContent = `📅 Event Date: ${eventDate}`;
 
   // Link to X account (replace with your username)
