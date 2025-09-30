@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
   }, 1000);
 
   // X link (replace with your username)
-  const xUsername = "SD_COLTON";
+  const xUsername = "being_announced";
   xLink.href = `https://x.com/${xUsername}`;
 });
 
