@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
   message.textContent = "🚧 To be announced soon. 🚧";
 
   // Set your event date & time here
-  const target = new Date("October 3, 2025 18:00:00").getTime();
+  const target = new Date("October 3, 2025 21:00:00").getTime();
 
   const timer = setInterval(() => {
     const now = new Date().getTime();
