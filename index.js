@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const datetime = document.getElementById("datetime");
   const xLink = document.getElementById("x-link");
 
-  message.textContent = "🚧 To be announced soon. 🚧";
+  message.textContent = "🚧 To be announced soon.(ONE DAY.)   🚧";
 
   // Set your event date & time here
   const target = new Date("October 3, 2025 21:00:00").getTime();
