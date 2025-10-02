@@ -35,7 +35,7 @@ function checkPassword() {
   const input = document.getElementById("password").value;
   const secretSection = document.getElementById("secret-section");
 
-  const correctPassword = "CYNSNEAKPEAK"; // change this
+  const correctPassword = "LASTUPDATE"; // change this
 
   if (input === correctPassword) {
     secretSection.classList.add("show");
